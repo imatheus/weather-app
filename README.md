@@ -1,16 +1,39 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicativo simples de previsão do tempo feito com **React** e **Vite**, integrado à API gratuita da [Open-Meteo](https://open-meteo.com/).
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Busca do clima atual pelo nome da cidade (via clique na lupa ou tecla `Enter`)
+- Exibição de temperatura, umidade e velocidade do vento
+- Feedback visual de carregamento e mensagens de erro
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- CSS3 e Font Awesome
+- API Open-Meteo (Geocoding e Forecast)
 
-## Expanding the Oxlint configuration
+## Como executar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+2. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+3. Acesse o endereço exibido no terminal (por padrão, `http://localhost:5173`).
+
+## Scripts disponíveis
+
+- `npm run dev` — inicia o ambiente de desenvolvimento
+- `npm run build` — gera o build de produção
+- `npm run preview` — pré-visualiza o build gerado
+- `npm run lint` — executa o linter (`oxlint`)
